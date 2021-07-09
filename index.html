@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+
+</head>
+<body>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Brenno Cavalcante</a>.
+  </div>
+
+  <p id="visor"></p>
+  
+  <div class="calc">
+
+    <button id="btnValue7"   onClick="inserir(7)"   >7</button>
+    <button id="btnValue8"   onClick="inserir(8)"   >8</button>
+    <button id="btnValue9"   onClick="inserir(9)"   >9</button>
+    <button id="deletar"     onClick="deletar()" class="del">DEL</button>
+    <button id="btnValue4"   onClick="inserir(4)"   >4</button>
+    <button id="btnValue5"   onClick="inserir(5)"   >5</button>
+    <button id="btnValue6"   onClick="inserir(6)"   >6</button>
+    <button id="somar"       onClick="inserir('+')" >+</button>
+    <button id="btnValue1"   onClick="inserir(1)"   >1</button>
+    <button id="btnValue2"   onClick="inserir(2)"   >2</button>
+    <button id="btnValue3"   onClick="inserir(3)"   >3</button>
+    <button id="subtrair"    onClick="inserir('-')" >-</button>
+    <button id="ponto"       onClick="inserir('.')" >.</button>
+    <button id="btnValue0"   onClick="inserir(0)"   >0</button>
+    <button id="dividir"     onClick="inserir('/')" >/</button>
+    <button id="multiplicar" onClick="inserir('*')" >x</button>
+    <div class="btn">
+      <button class="reset" onClick="resetar()">RESET</button>
+      <button class="equal" onClick="resolver()">=</button>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
